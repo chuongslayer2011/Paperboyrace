@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -156294078, guid: 8a9a187bf49b1827eb89879d14fc8507, type: 3}
+  m_Name: FreeplaySDKSettings
+  m_EditorClassIdentifier:
+  AppIconTexture: {fileID: 2800000, guid: 5258269d75b8df146845d8521405502f, type: 3}
+  _coreSettings:
+    _isPrivacyPolicyEnabled: 1
+    _isAttEnabled: 1
+    _isAnalyticsEnabled: 1
+    _isAdvertisingEnabled: 1
+    _useInAppWebPresenter: 1
+    _isInAppPurchaseEnabled: 1
+    _isDebugEnabled: 1
+  _privacyPolicySettings:
+    _privacyPolicyPrefab: {fileID: 1958254809739908, guid: c79cd7ee831b6f24991992bb61aca2c1, type: 2}
+    _iosPrivacyPolicyLink: https://freeplay.io/games/ios/privacy/
+    _iosTermsLink:
+    _androidPrivacyPolicyLink: https://freeplay.io/games/android/privacy-policy/
+    _androidTermsLink: https://freeplay.io/games/android/terms-of-use/
+    _useAdMobConsentForn: 1
+  _loggingSettings:
+    _editorLogLevel: 0
+    _debugBuildLogLevel: 0
+    _releaseBuildLogLevel: 1
+    _isIosDebugBuildLogsInConsoleEnabled: 1
+  _analyticsSettings:
+    _useLegacyEventSystem: 1
+    _isFacebookEnabled: 1
+    _isGameAnalyticsEnabled: 1
+    _isAppMetricaEnabled: 1
+    _isAppsFlyerEnabled: 1
+    _isFirebaseEnabled: 1
+    _isFlyAnalyticsEnabled: 1
+  _facebookSDKSettings:
+    _appName:
+    _appId: 998891077557920
+    _clientToken: ff65c98309e58b81818a5f5e8b878b72
+  _gameAnalyticsSettings:
+    _iosGameAnalyticsGameKey:
+    _iosGameAnalyticsSecretKey:
+    _androidGameAnalyticsGameKey: e59148dec10688f731d0ac727425d758
+    _androidGameAnalyticsSecretKey: 3f0be6517c8aa4df339c6d0060d9e58808efa5c5
+  _appMetricaSettings:
+    _appMetricaApiKey: 67d8e8d6-fc17-4442-b3ed-4b5d4a2d83a1
+  _firebaseSettings:
+    _activeModules: -1
+  _appsFlyerSettings:
+    _appsFlyerDevKey:
+    _appsFlyerAndroidDevKey: vahRt3P9TYBD4Sd72WZgqD
+    _iosAppId:
+  _flyAnalyticsSettings:
+    _iosApiKey:
+    _androidApiKey: f1363a0f-0e39-bdb5-53b8-ddc64a88a4f7
+    _iosServerName: EU1
+    _adnroidServerName: EU1
+  _advertisingSettings:
+    _isAdAutoLoadingEnabled: 1
+    _isEditorAdsEnabled: 0
+    _isIronSourceEnabled: 0
+    _isAppLovinEnabled: 1
+    _isCrossPromoEnabled: 0
+    _supportedAdModules: 7
+    _loadingAdTypes: 7
+    _timeBeforeLoadMediationBannerAfterCrossPromoShow: 15
+  _ironSourceSettings:
+    _ironSourceIosAppKey:
+    _ironSourceAndroidAppKey:
+    _bannerPosition: 2
+    _bannerSize: 3
+  _appLovinSdkSettings:
+    _sdkKey: XvUoRCu37HlTVMHJ_v5gSakPO8GNwR3tE7T1q5QfTMPv0lFwQheac-WFP24LLkfIeOrXQfKWc0UUOqhXrJFWdh
+    _adModulesSettings:
+    - _adType: 4
+      _androidModuleId: 629cfc6d578220f0
+      _iosModuleIds: []
+    - _adType: 2
+      _androidModuleId: 929a6be281a60ed6
+      _iosModuleIds: []
+    - _adType: 1
+      _androidModuleId: ed5031d07f4d606a
+      _iosModuleIds: []
+    _appLovinBannerPosition: 7
+    _bannerBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  _crossPromoSettings:
+    _supportedAdModules: 12
+    _localCreativesJson: {fileID: 0}
+    _appId:
+    _secretKey:
+    _bannerSettings:
+      _sizeType: 4
+      _position: 1
+      _customBannerSize: {x: 0, y: 0}
+      _useNotchArea: 1
+      _useHomeButtonArea: 1
+      refreshTime: 60
+    _inGameAdsSettings: {}
+  _adMobSettings:
+    _adMobIosAppID: ca-app-pub-8236392776689719~2699102722
+    _aDMobAndroidAppId: ca-app-pub-8236392776689719~4243180610
+  _amazonSettings:
+    _appId:
+      _ios:
+      _android: c4ca20cb-129b-40ed-bdfe-cb121e978b1e
+    _bannerSlotId:
+      _ios:
+      _android: e25a1a6c-4428-4e77-a06d-4f4fcbc76fa7
+    _rewardSlotId:
+      _ios:
+      _android: 8e35c10e-d4df-46c5-aa80-281cae01a007
+    _interVideoSlotId:
+      _ios:
+      _android: ef416103-35b7-4b12-aa0c-8171247e5aef
+    _interStaticSlotId:
+      _ios:
+      _android: 02cd7018-3b61-4df6-a6f9-739845b64e37

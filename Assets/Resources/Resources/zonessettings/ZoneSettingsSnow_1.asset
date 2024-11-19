@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a87c41dbcfb99860cc2253ec07f6bb1, type: 3}
+  m_Name: ZoneSettingsSnow_1
+  m_EditorClassIdentifier:
+  _stageId: snow_1
+  _skyboxMaterial: {fileID: 2100000, guid: 98a22558c72b2934db5a99448d8fb229, type: 2}
+  _fogColor: {r: 0.25, g: 0.6564394, b: 1, a: 1}
+  _roadColor: {r: 1, g: 1, b: 1, a: 1}
+  _roadSizeColor: {r: 1, g: 1, b: 1, a: 1}
+  _paddingColor: {r: 1, g: 1, b: 1, a: 1}
+  _lightColor1: {r: 1, g: 1, b: 1, a: 1}
+  _lightColor2: {r: 1, g: 1, b: 1, a: 1}
+  _lightColor3: {r: 1, g: 1, b: 1, a: 1}
+  _generalZonesPrefabs:
+  - {fileID: 114814176265164636, guid: b4117a4c9f42ab54998ecbadb437af72, type: 2}
+  - {fileID: 114031997571734448, guid: d665bd9efbca06944a8f63b411b5adec, type: 2}
+  - {fileID: 114666904412689781, guid: a84a81faa15659a4591b017d64abe546, type: 2}
+  - {fileID: 114463097940110458, guid: 7daa4028226db4a41aac92845bb489dd, type: 2}
+  - {fileID: 114881087974892917, guid: 22f2376c103a0fc43bcdc0fd40539ab0, type: 2}
+  _crossroadZonesPrefabs:
+  - {fileID: 114147641470588565, guid: 842d8d9e6874aac47825f29197c4fe0a, type: 2}

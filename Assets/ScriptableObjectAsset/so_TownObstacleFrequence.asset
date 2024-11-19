@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d436475e15b59445b3ec180790f1c15, type: 3}
+  m_Name: so_TownObstacleFrequence
+  m_EditorClassIdentifier: 
+  obstacleFrequenceTownList1:
+  - {x: 0, y: 0, z: 25}
+  - {x: 2.666667, y: 0, z: 45}
+  - {x: 2.666667, y: 0, z: 10}
+  - {x: -2.666667, y: 0, z: 20}
+  - {x: -2.666667, y: 0, z: 50}
+  - {x: 0, y: 0, z: 30}
+  - {x: 0, y: 0, z: 60}
+  - {x: -2.666667, y: 0, z: 60}
+  - {x: -2.666667, y: 0, z: 70}
+  - {x: 2.666667, y: 0, z: 70}
+  - {x: 2.666667, y: 0, z: 80}
+  - {x: 0, y: 0, z: 90}
+  obstacleList:
+  - {fileID: 1017739047087199, guid: ad41158e776670943b44c36ab1597e36, type: 3}
+  - {fileID: 1582857080769069, guid: 5a73f315e588fff48a09fe02ed59a76b, type: 3}
+  - {fileID: 1017739047087199, guid: ad41158e776670943b44c36ab1597e36, type: 3}
+  - {fileID: 1938519245236546, guid: 333a68f4063aa6a44882b70cd7bccba2, type: 3}
+  - {fileID: 1889997975045497, guid: ad56a8a4238e1c7449ad6e87e552b889, type: 3}
+  - {fileID: 1641124246621679, guid: 241e51634e5e6b942b85d3daf737bd84, type: 3}
+  roadSpawnPosition:
+  - {x: 0, y: 0, z: -20}
+  - {x: 0, y: 0, z: 100}
+  - {x: 0, y: 0, z: 220}
+  finishPointPosition: {x: 0, y: 0, z: 315}
+  mailDeliveryArea:
+  - {fileID: 1305644730741875, guid: ea5b3cb9d468c3244a247e43c507fa94, type: 3}
+  - {fileID: 1737916275489764, guid: e531e321b9130eb42b4e302694827224, type: 3}
+  - {fileID: 1394505262499845, guid: 399fea7a74517a4499df6461096f9e3f, type: 3}
+  - {fileID: 1478150368722463, guid: 676093f64ffe01a428206068855bc594, type: 3}
+  - {fileID: 1181183519995808, guid: db663e22cbe312546b3e38a66a7e6c00, type: 3}
+  - {fileID: 1787335077674149, guid: cc1f43542037a0e40b701ddbcc0ee76c, type: 3}
+  - {fileID: 1718621941310253, guid: 34c58be53ac8fcc4ba852f18a4c6b349, type: 3}
+  - {fileID: 1305644730741875, guid: ea5b3cb9d468c3244a247e43c507fa94, type: 3}
+  - {fileID: 1615248232772550, guid: 113a51af13a4b4c429f092e3f96c5093, type: 3}
+  - {fileID: 1066864182402123, guid: 9a5707383824b454295ccb5be4d6a0d2, type: 3}
+  - {fileID: 1759086823195365, guid: 1025a8f8d3b5da744a1daed6fa6ef16d, type: 3}
+  finishPoint: {fileID: 1589177588948704, guid: 474729ea05c72d64581f6315d399f12f, type: 3}
+  crossRoad: {fileID: 1642920376415186, guid: e59808cbf1cd87d439751bb5fbb39a29, type: 3}

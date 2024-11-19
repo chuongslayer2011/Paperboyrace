@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae8b7db2a771944e9c089d2be5d1056, type: 3}
+  m_Name: so_ItemData
+  m_EditorClassIdentifier: 
+  itemDatas:
+  - price: 0
+  - price: 500
+  - price: 550
+  - price: 550
+  - price: 600
+  - price: 1000
+  - price: 800
+  - price: 750
+  - price: 900
+  pantMaterials:
+  - {fileID: 2100000, guid: 60f2416e5f1acdf41ba48f628495614c, type: 2}
+  - {fileID: 2100000, guid: 6349d97b451e0a7418078888f87b8404, type: 2}
+  - {fileID: 2100000, guid: acee2683b0c3272488d36befe025b85a, type: 2}
+  - {fileID: 2100000, guid: 26aa898bed741d54cabebd7e599e1a0a, type: 2}
+  - {fileID: 2100000, guid: 5610b3aac8e76ef45b50c58bc74e01c4, type: 2}
+  - {fileID: 2100000, guid: 27b93459d4297274fb17ad0b618d4e81, type: 2}
+  - {fileID: 2100000, guid: 5ca12c7f30e365648a18eb8c98390504, type: 2}
+  - {fileID: 2100000, guid: 303bae0db2c982d49b6631b032900821, type: 2}
+  - {fileID: 2100000, guid: a55d14b1d16e2364d89dd923e27377c2, type: 2}

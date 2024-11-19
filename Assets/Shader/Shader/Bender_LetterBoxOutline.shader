@@ -1,0 +1,35 @@
+Shader "Bender/LetterBoxOutline" {
+	Properties {
+		_MainTex ("MainTex", 2D) = "white" {}
+		_Emission ("Emission", Range(0, 1)) = 0.7
+		_ColorAdd ("ColorAdd", Vector) = (0,0,0,0)
+		_AddColorBlend ("AddColorBlend", Range(0, 1)) = 0
+		_OutlineColor ("OutlineColor", Vector) = (0,0,0,0)
+		_OutlineWidth ("OutlineWidth", Range(0, 2)) = 0.1
+		[HideInInspector] _texcoord ("", 2D) = "white" {}
+		[HideInInspector] __dirty ("", Float) = 1
+	}
+	//DummyShaderTextExporter
+	SubShader{
+		Tags { "RenderType"="Opaque" }
+		LOD 200
+		CGPROGRAM
+#pragma surface surf Standard
+#pragma target 3.0
+
+		sampler2D _MainTex;
+		struct Input
+		{
+			float2 uv_MainTex;
+		};
+
+		void surf(Input IN, inout SurfaceOutputStandard o)
+		{
+			fixed4 c = tex2D(_MainTex, IN.uv_MainTex);
+			o.Albedo = c.rgb;
+			o.Alpha = c.a;
+		}
+		ENDCG
+	}
+	//CustomEditor "ASEMaterialInspector"
+}

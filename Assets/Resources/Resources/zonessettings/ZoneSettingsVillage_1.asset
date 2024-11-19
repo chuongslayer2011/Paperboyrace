@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a87c41dbcfb99860cc2253ec07f6bb1, type: 3}
+  m_Name: ZoneSettingsVillage_1
+  m_EditorClassIdentifier:
+  _stageId: stage_village
+  _skyboxMaterial: {fileID: 2100000, guid: 98a22558c72b2934db5a99448d8fb229, type: 2}
+  _fogColor: {r: 0.6901961, g: 0.83137256, b: 0.8980392, a: 1}
+  _roadColor: {r: 1, g: 1, b: 1, a: 1}
+  _roadSizeColor: {r: 1, g: 1, b: 1, a: 1}
+  _paddingColor: {r: 1, g: 1, b: 1, a: 1}
+  _lightColor1: {r: 1, g: 0.8392157, b: 0.8392157, a: 1}
+  _lightColor2: {r: 0.72156864, g: 0.44705883, b: 0.44705883, a: 1}
+  _lightColor3: {r: 0.5647059, g: 0.5568628, b: 0.7019608, a: 1}
+  _generalZonesPrefabs:
+  - {fileID: 114728941424757182, guid: ae0c01452d7e68d45b6185d296c7e109, type: 2}
+  - {fileID: 114581567063204293, guid: 94134204246673a468d1fa584736b14c, type: 2}
+  - {fileID: 114230913614116674, guid: 5273501de754fed48b6f01fa81194b76, type: 2}
+  - {fileID: 114290015012171315, guid: f91ac242db3f65849bf3fa71aa75a5a0, type: 2}
+  - {fileID: 114198157069544038, guid: c5061e20e806ce14d8b6a6ee41146267, type: 2}
+  _crossroadZonesPrefabs:
+  - {fileID: 114662764295845772, guid: 121addc871460444c8c8e5a8f375c0cf, type: 2}

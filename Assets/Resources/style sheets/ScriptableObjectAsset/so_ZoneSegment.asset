@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1242b70f6cb24a14a9c58fa3aa8f49fc, type: 3}
+  m_Name: so_ZoneSegment
+  m_EditorClassIdentifier: 
+  townSegmentList:
+  - {fileID: 1729325344274914, guid: d107d1d0f4ecb924a899b70364c6955c, type: 3}
+  - {fileID: 1718964985126779, guid: bff9c935b7a46c545a9773975674e738, type: 3}
+  - {fileID: 1089869196252853, guid: 01edb0a5643cf744294f665738dc0f4b, type: 3}
+  - {fileID: 1218052667234852, guid: 94534f0e478b6f946a58a8893ef6f9f5, type: 3}
+  villageSegmentList:
+  - {fileID: 1310221570190431, guid: ae0c01452d7e68d45b6185d296c7e109, type: 3}
+  - {fileID: 1102659480135688, guid: 94134204246673a468d1fa584736b14c, type: 3}
+  - {fileID: 1381010662217999, guid: 5273501de754fed48b6f01fa81194b76, type: 3}
+  - {fileID: 1132913833082341, guid: f91ac242db3f65849bf3fa71aa75a5a0, type: 3}
+  - {fileID: 1516226230373845, guid: c5061e20e806ce14d8b6a6ee41146267, type: 3}
+  townTile: {fileID: 1290437468122397, guid: d4140f8ecad8c7841892b72943c849c3, type: 3}
+  villageTile: {fileID: 1317501935994234, guid: 7f43cea608f35ba4d8064ee5d6f03794, type: 3}
+  townBaseLevel: {fileID: 1039244813174143, guid: 3283d88f60767d24fa2db70d94f9deb8, type: 3}
+  villageBaseLevel: {fileID: 1176605755607558, guid: 78bb880982a3f4840b50b8d841d76db8, type: 3}

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d436475e15b59445b3ec180790f1c15, type: 3}
+  m_Name: so_TownObstacleFrequence
+  m_EditorClassIdentifier: 
+  obstacleFrequenceTownList1:
+  - {x: 0, y: 0, z: 25}
+  - {x: 2.666667, y: 0, z: 45}
+  - {x: 0, y: 0, z: 10}
+  - {x: 2.666667, y: 0, z: 10}
+  - {x: -2.666667, y: 0, z: 20}
+  - {x: -2.666667, y: 0, z: 50}
+  - {x: 0, y: 0, z: 30}
+  obstacleList:
+  - {fileID: 1017739047087199, guid: ad41158e776670943b44c36ab1597e36, type: 3}
+  - {fileID: 1938519245236546, guid: 333a68f4063aa6a44882b70cd7bccba2, type: 3}
+  - {fileID: 1582857080769069, guid: 5a73f315e588fff48a09fe02ed59a76b, type: 3}
+  - {fileID: 1017739047087199, guid: ad41158e776670943b44c36ab1597e36, type: 3}
+  roadSpawnPosition:
+  - {x: 0, y: 0, z: -20}
+  - {x: 0, y: 0, z: 40}
+  - {x: 0, y: 0, z: 100}
+  finishPointPosition: {x: 0, y: 0, z: 75}
+  mailDeliveryArea:
+  - {fileID: 1737916275489764, guid: e531e321b9130eb42b4e302694827224, type: 3}
+  - {fileID: 1394505262499845, guid: 399fea7a74517a4499df6461096f9e3f, type: 3}
+  - {fileID: 1478150368722463, guid: 676093f64ffe01a428206068855bc594, type: 3}

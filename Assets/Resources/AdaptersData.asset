@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1159406154, guid: 9800700914c4f85cb64642c7a9c796c4, type: 3}
+  m_Name: AdaptersData
+  m_EditorClassIdentifier:
+  _data:
+  - Name: AppLovin MAX Mediation Plugin
+    Version: 6.6.3
+    AndroidVersion:
+    IosVersion:
+  - Name: Amazon Ad Marketplace
+    Version: android_9.9.5.0_ios_4.9.3.1
+    AndroidVersion: 9.9.5.0
+    IosVersion: 4.9.3.1
+  - Name: BidMachine
+    Version: android_2.7.0.0_ios_2.7.0.0.0
+    AndroidVersion: 2.7.0.0
+    IosVersion: 2.7.0.0.0
+  - Name: DT Exchange
+    Version: android_8.2.7.1_ios_8.2.8.0
+    AndroidVersion: 8.2.7.1
+    IosVersion: 8.2.8.0
+  - Name: Facebook
+    Version: android_6.17.0.0_ios_6.15.0.0
+    AndroidVersion: 6.17.0.0
+    IosVersion: 6.15.0.0
+  - Name: Google Ad Manager
+    Version: android_23.0.0.1_ios_11.5.0.0
+    AndroidVersion: 23.0.0.1
+    IosVersion: 11.5.0.0
+  - Name: Google AdMob
+    Version: android_23.0.0.1_ios_11.5.0.0
+    AndroidVersion: 23.0.0.1
+    IosVersion: 11.5.0.0
+  - Name: InMobi
+    Version: android_10.6.7.0_ios_10.7.2.0
+    AndroidVersion: 10.6.7.0
+    IosVersion: 10.7.2.0
+  - Name: ironSource
+    Version: android_8.0.0.0.0_ios_8.0.0.0.0
+    AndroidVersion: 8.0.0.0.0
+    IosVersion: 8.0.0.0.0
+  - Name: Liftoff Monetize
+    Version: android_7.3.2.0_ios_7.3.2.0
+    AndroidVersion: 7.3.2.0
+    IosVersion: 7.3.2.0
+  - Name: Mintegral
+    Version: android_16.7.31.0_ios_7.6.4.0.0
+    AndroidVersion: 16.7.31.0
+    IosVersion: 7.6.4.0.0
+  - Name: Moloco
+    Version: android_3.1.0.0_ios_3.1.2.0
+    AndroidVersion: 3.1.0.0
+    IosVersion: 3.1.2.0
+  - Name: Pangle
+    Version: android_5.9.0.6.0_ios_5.9.0.8.0
+    AndroidVersion: 5.9.0.6.0
+    IosVersion: 5.9.0.8.0
+  - Name: Smaato
+    Version: android_22.6.1.0_ios_22.8.3.0
+    AndroidVersion: 22.6.1.0
+    IosVersion: 22.8.3.0
+  - Name: Unity Ads
+    Version: android_4.11.3.0_ios_4.11.3.0
+    AndroidVersion: 4.11.3.0
+    IosVersion: 4.11.3.0
