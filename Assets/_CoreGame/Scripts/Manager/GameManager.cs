@@ -6,14 +6,11 @@ using UnityEngine.Events;
 
 public class GameManager : Singleton<GameManager>
 {
-    //[SerializeField] UserData userData;
-    //[SerializeField] CSVData csv;
-    //private static GameState gameState = GameState.MainMenu;
+
     public Player player;
     protected void Awake()
     {
         DataManager.Ins.LoadData();
-        //base.Awake();
         Input.multiTouchEnabled = false;
         Application.targetFrameRate = 60;
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
