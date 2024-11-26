@@ -47,7 +47,8 @@ public class MapManager : Singleton<MapManager>
         {
             rightChunk = Instantiate(zoneData.GetRandomChunk(currentZone), new Vector3(20.5f, currentRoad.transform.position.y, 20 + currentRoad.transform.position.z + i * 40), Quaternion.Euler(0, 0, 0), currentRoad.GetObstaclesParentTransform());
             leftChunk = Instantiate(zoneData.GetRandomChunk(currentZone), new Vector3(-20.5f, currentRoad.transform.position.y, 20 + currentRoad.transform.position.z + i * 40), Quaternion.Euler(0, 180, 0), currentRoad.GetObstaclesParentTransform());
-            rightChunk.GetComponent<Chunk>().RotateHouse();
+            if(rightChunk.GetComponent<Chunk>())
+                rightChunk.GetComponent<Chunk>().RotateHouse();
         }
  
     }
@@ -58,7 +59,8 @@ public class MapManager : Singleton<MapManager>
         {
             rightChunk = Instantiate(zoneData.GetRandomChunk(currentZone), new Vector3(20.5f, currentRoad.transform.position.y, 20 + currentRoad.transform.position.z + i * 40), Quaternion.Euler(0, 0, 0), currentRoad.GetObstaclesParentTransform());
             leftChunk = Instantiate(zoneData.GetRandomChunk(currentZone), new Vector3(-20.5f, currentRoad.transform.position.y, 20 + currentRoad.transform.position.z + i * 40), Quaternion.Euler(0, 180, 0), currentRoad.GetObstaclesParentTransform());
-            rightChunk.GetComponent<Chunk>().RotateHouse();
+            if(rightChunk.GetComponent<Chunk>())
+                rightChunk.GetComponent<Chunk>().RotateHouse();
         }
 
     }
@@ -75,7 +77,7 @@ public class MapManager : Singleton<MapManager>
     }
     public void SpawnMailDeliveryArea()
     {
-        GameObject tmp = Instantiate(townObstacleFrequence.GetMailDeliveryArea(), currentRoad.transform.position, Quaternion.Euler(0, 0, 0),currentRoad.GetObstaclesParentTransform());
+        GameObject tmp = Instantiate(townObstacleFrequence.GetMailDeliveryArea(MapManager.Ins.currentZone), currentRoad.transform.position, Quaternion.Euler(0, 0, 0),currentRoad.GetObstaclesParentTransform());
 
     }
     public void SpawnCrossRoad()

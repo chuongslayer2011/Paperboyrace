@@ -430,7 +430,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4699929256301419}
-  - component: {fileID: 2405288298335300583}
   m_Layer: 13
   m_Name: Chunk_village_4
   m_TagString: Untagged
@@ -491,19 +490,6 @@ Transform:
   - {fileID: 4833592272153535}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
---- !u!114 &2405288298335300583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132913833082341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 588b5309954d988488bd629f71502869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  houseList: []
 --- !u!1 &1136954309405275
 GameObject:
   m_ObjectHideFlags: 0

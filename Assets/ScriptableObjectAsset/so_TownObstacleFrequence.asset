@@ -37,8 +37,7 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 100}
   - {x: 0, y: 0, z: 220}
   finishPointPosition: {x: 0, y: 0, z: 315}
-  mailDeliveryArea:
-  - {fileID: 1305644730741875, guid: ea5b3cb9d468c3244a247e43c507fa94, type: 3}
+  mailDeliveryAreaTownList:
   - {fileID: 1737916275489764, guid: e531e321b9130eb42b4e302694827224, type: 3}
   - {fileID: 1394505262499845, guid: 399fea7a74517a4499df6461096f9e3f, type: 3}
   - {fileID: 1478150368722463, guid: 676093f64ffe01a428206068855bc594, type: 3}
@@ -46,8 +45,21 @@ MonoBehaviour:
   - {fileID: 1787335077674149, guid: cc1f43542037a0e40b701ddbcc0ee76c, type: 3}
   - {fileID: 1718621941310253, guid: 34c58be53ac8fcc4ba852f18a4c6b349, type: 3}
   - {fileID: 1305644730741875, guid: ea5b3cb9d468c3244a247e43c507fa94, type: 3}
+  - {fileID: 1162415163640968, guid: 2b13ec069c93ece4797e97ddfd35f25b, type: 3}
   - {fileID: 1615248232772550, guid: 113a51af13a4b4c429f092e3f96c5093, type: 3}
   - {fileID: 1066864182402123, guid: 9a5707383824b454295ccb5be4d6a0d2, type: 3}
   - {fileID: 1759086823195365, guid: 1025a8f8d3b5da744a1daed6fa6ef16d, type: 3}
+  mailDeliveryVillageList:
+  - {fileID: 1068885284657419, guid: 25c3a9d8c71afd64281a435fc7ea68a0, type: 3}
+  - {fileID: 1139142609010519, guid: e6d2626517ec698449be6d69884d2564, type: 3}
+  - {fileID: 1478440606737831, guid: 1636f52288c0b3347bffba04d3dab4d7, type: 3}
+  - {fileID: 1544143938333374, guid: 94d60ae2ff45eb64f8b76b6124356870, type: 3}
+  - {fileID: 1970826697260065, guid: 68672b39299f5a34f8a1e44ab853a0f9, type: 3}
+  - {fileID: 1854932852540864, guid: 0bf45ac268cb7194bbb7aecca3a8a9d3, type: 3}
+  - {fileID: 1267308666116347, guid: 2c90d2c3a2470ef4cafe7314969fa0d1, type: 3}
+  - {fileID: 1036452013012136, guid: a466266efe20002448615f331fd6a67b, type: 3}
+  - {fileID: 1680030836872171, guid: 0b80aa952bc9bec4aa23376c6060d1d8, type: 3}
+  - {fileID: 1321263965425901, guid: 896b8e32608a4d1498bc2f8586c45f0d, type: 3}
+  - {fileID: 1200826477020955, guid: 4631ed4101b123d40944bf69fd135eb9, type: 3}
   finishPoint: {fileID: 1589177588948704, guid: 474729ea05c72d64581f6315d399f12f, type: 3}
   crossRoad: {fileID: 1642920376415186, guid: e59808cbf1cd87d439751bb5fbb39a29, type: 3}

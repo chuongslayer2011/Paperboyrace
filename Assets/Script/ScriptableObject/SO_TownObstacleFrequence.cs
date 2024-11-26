@@ -8,7 +8,8 @@ public class SO_TownObstacleFrequence : ScriptableObject
     [SerializeField] public List<GameObject> obstacleList;
     [SerializeField] public List<Vector3> roadSpawnPosition;
     [SerializeField] public Vector3 finishPointPosition;
-    [SerializeField] public List<GameObject> mailDeliveryArea;
+    [SerializeField] public List<GameObject> mailDeliveryAreaTownList;
+    [SerializeField] public List<GameObject> mailDeliveryVillageList;
     [SerializeField] public GameObject finishPoint;
     [SerializeField] public GameObject crossRoad;
     public GameObject GetRandomObstacle()
@@ -28,10 +29,19 @@ public class SO_TownObstacleFrequence : ScriptableObject
     {
         return obstacleFrequenceTownList1[index];
     }
-    public GameObject GetMailDeliveryArea()
+    public GameObject GetMailDeliveryArea(ZoneType zoneType)
     {
-        int i = Random.Range(0, mailDeliveryArea.Count);
-        return mailDeliveryArea[i];
+        int i = Random.Range(0, mailDeliveryAreaTownList.Count);
+        switch (zoneType)
+        {
+            case ZoneType.TownZone:
+                return mailDeliveryAreaTownList[i];
+            case ZoneType.VillageZone:
+                return mailDeliveryVillageList[i];
+            default: return null;
+
+        }
+        
     }
     public GameObject GetCrossRoad()
     {

@@ -2484,6 +2484,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4402471947409123}
+  - component: {fileID: 439239469095426365}
   m_Layer: 13
   m_Name: Chunk_2_4
   m_TagString: Untagged
@@ -2527,6 +2528,23 @@ Transform:
   - {fileID: 4688472380200898}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &439239469095426365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851890485702163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 588b5309954d988488bd629f71502869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  houseList:
+  - {fileID: 1136050257375154}
+  - {fileID: 1157656268650989}
+  - {fileID: 1909513340936979}
+  - {fileID: 1216148098551621}
 --- !u!1 &1856181764610088
 GameObject:
   m_ObjectHideFlags: 0
