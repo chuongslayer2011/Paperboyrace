@@ -11,6 +11,8 @@ public class MapManager : Singleton<MapManager>
     [SerializeField] private Road currentRoad;
     [SerializeField] private int obtainCoinAmountOnCurrentMap = 0;
     private List<GameObject> roadList = new List<GameObject>();
+    private int deliveriedMailOnCurrentZone = 0;
+    public int deliveriedMaillOnCurrentMap = 0;
     public void SpawnRoad()
     {   
         if (currentLevelRoad == 3)
@@ -95,6 +97,7 @@ public class MapManager : Singleton<MapManager>
     public void ObtainCoinByDelivery()
     {
         obtainCoinAmountOnCurrentMap += 30;
+        deliveriedMaillOnCurrentMap += 1;
     }
     public void ResetCoin()
     {
@@ -113,8 +116,37 @@ public class MapManager : Singleton<MapManager>
         roadList.Clear();
         currentLevelRoad = 0;
         obtainCoinAmountOnCurrentMap = 0;
+        deliveriedMaillOnCurrentMap = 0;
         SpawnRoad();
         Player.Ins.ResetPosition();
+    }
+    public void ChangeZone()
+    {
+        ZoneType zone;
+        do
+        {
+            int i = Random.Range(0, 2);
+            zone = (ZoneType)i;
+        }
+        while (zone == currentZone);
+        currentZone = zone;
+    }
+    public int GetDeliveriedMailQuantityOnCurrentLevel()
+    {
+        return deliveriedMaillOnCurrentMap;
+    }
+    public int GetDeliveriedMailQuantityOnCurrentZone()
+    {
+        return deliveriedMailOnCurrentZone;
+    }
+    public void UpdateDeliveriedMailQuantityOnCurrentZone()
+    {
+        deliveriedMailOnCurrentZone += 1;
+        if(deliveriedMailOnCurrentZone >= 10)
+        {
+            deliveriedMailOnCurrentZone -= 10;
+            ChangeZone();
+        }
     }
     public void Spawn()
     {

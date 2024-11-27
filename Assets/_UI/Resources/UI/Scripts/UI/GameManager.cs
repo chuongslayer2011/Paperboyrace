@@ -97,6 +97,7 @@ public class GameManager : Singleton<GameManager>
     public IEnumerator OpenWinUI()
     {
         yield return new WaitForSeconds(3f);
+        Debug.Log("Win");
         UIManager.Ins.CloseAll();
         UIManager.Ins.OpenUI<Win>();
     }

@@ -11,4 +11,10 @@ public class EventManager
         if (DeliveryMail == null) return;
         DeliveryMail();
     }
+    public static event Action OnChangeZone;
+    public static void CallOnChangeZoneEvent()
+    {
+        if( OnChangeZone == null) return;
+        OnChangeZone();
+    }
 }
