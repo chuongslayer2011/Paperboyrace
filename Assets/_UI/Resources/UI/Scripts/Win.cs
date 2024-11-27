@@ -9,7 +9,7 @@ public class Win : UICanvas
     public TMP_Text coinObtain;
     private void OnEnable()
     {
-        coinObtain.text = MapManager.Ins.GetObtainCoinOnCurrentMap().ToString();
+        //coinObtain.text = MapManager.Ins.GetObtainCoinOnCurrentMap().ToString();
     }
     public void MainMenuButton()
     {

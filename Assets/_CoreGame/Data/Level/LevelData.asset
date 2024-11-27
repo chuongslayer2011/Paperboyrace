@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f1418dc32ecf0a43868a9dae8c5b7c6, type: 3}
+  m_Name: LevelData
+  m_EditorClassIdentifier: 
+  villages:
+  - {fileID: 7471344005326068412, guid: 420bc8a56a8af054eac65fa255d3b992, type: 3}
+  - {fileID: 985686546026743449, guid: 81ed5f779b087134c9b0d4b5a35e82c2, type: 3}
+  - {fileID: 3905098661093744291, guid: 01abe5b9a500eec4d957769143e6f87c, type: 3}
+  - {fileID: 304766110637285138, guid: 8e16ce7fc134ec24b9b0875e49d9e373, type: 3}
+  - {fileID: 7655555044946021839, guid: 8d24245c4aa41094690a8f66c4b79707, type: 3}
+  - {fileID: 6362490431516853390, guid: e7c97835e1a6f384c8d164ccdef90c5c, type: 3}
+  crossRoadVillages:
+  - {fileID: 4736517478589851801, guid: 33872f8d544bac2499e5850c36a71aa3, type: 3}
+  roadTile_Village: {fileID: 3291021632014995558, guid: 2ce33c203affeba43a2a4c3eef8d35a7, type: 3}

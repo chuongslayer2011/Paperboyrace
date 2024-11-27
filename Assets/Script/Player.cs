@@ -12,6 +12,8 @@ public class Player : Singleton<Player>
     public float brakingSpeed = 0.1f;   // tốc độ hãm lại của player
     public float jumpForce = 5f;        // lực nhảy
 
+    public Vector3 direcJump;
+
     [Header("Delivery")]
     public Transform newPaperOnHandTransformParent;
     public GameObject newPaperPrefab;
@@ -29,7 +31,7 @@ public class Player : Singleton<Player>
 
     private void Start()
     {
-        animator = GetComponentInChildren<Animator>();
+        animator = GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody>();
 
     }
@@ -52,21 +54,34 @@ public class Player : Singleton<Player>
             movement = new Vector3(0, 0, -brakingSpeed);
             Stop(movement);
         }
+        else
+        {
+            animator.SetBool("isRunning", false);
+        }
+
+        if(Input.GetKeyDown(KeyCode.J) )
+        {
+            isJumping = false;
+            JumpOnTrampoline();
+        }
     }
 
     private void Moving(Vector3 movement)
-    {     
+    {
+        animator.SetBool("isRunning", true);
         if((transform.position.x >= maxRange && movement.x > 0) || (transform.position.x <= -maxRange && movement.x < 0))
         {
             movement.x = 0f;
         }
-        rigidbody.velocity = movement * movingSpeed;
+        rigidbody.velocity = new Vector3(movement.x * movingSpeed, rigidbody.velocity.y, movement.z * movingSpeed);
 
     }
 
     private void Stop(Vector3 movement)
     {
-        if(rigidbody.velocity.z > 0f)
+        animator.SetBool("isRunning", false);
+        rigidbody.velocity = new Vector3(0, 0, rigidbody.velocity.z);
+        if (rigidbody.velocity.z > 0f)
         {
             rigidbody.velocity += movement;
         }
@@ -74,10 +89,12 @@ public class Player : Singleton<Player>
     }
     public void JumpOnTrampoline()
     {
-        isJumping = true;
-        ChangeAnim("jump");
-        rigidbody.AddForce(new Vector3(0, 0.75f,10) * jumpForce, ForceMode.Impulse);
-        Invoke(nameof(ResetJumpAnim), 1.55555f);
+        if(isJumping == false) 
+        {
+            rigidbody.AddForce(direcJump * jumpForce, ForceMode.Impulse);
+            animator.SetTrigger("jump");
+            isJumping = true;
+        }
     }
     public void SetPlayingState(bool isPlaying)
     {

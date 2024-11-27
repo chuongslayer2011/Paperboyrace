@@ -1,9 +1,106 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum TypeMap
+{
+    Village,
+}
+
 public class MapManager : Singleton<MapManager>
 {
+    public LevelData data;
+    public TypeMap typeMap = TypeMap.Village;
+
+    public GameObject currentMap;
+    public GameObject currentRoad;
+
+    private int maxMapLength = 10;
+    private int crossRoadPos;
+    private int level = 1;
+
+    private void Start()
+    {
+        SpawnMap();
+    }
+
+    public void SpawnMap()
+    {
+        // get data level
+
+        // 10 level đầu sẽ không có đường chạy qua hoặc tàu hoả
+        if(level > 10)
+        {
+            crossRoadPos = Random.RandomRange(2, maxMapLength - 1);
+        }
+        for(int i = 1; i <= maxMapLength; i++)
+        {
+            if(i != crossRoadPos)
+            {
+                GameObject go = GetRandomChunk(typeMap);
+                go = Instantiate(go, new Vector3(0, -0.2f, 40f * (i - 1)), Quaternion.identity);
+                go.transform.SetParent(currentMap.transform, false);
+            }
+            else
+            {
+                GameObject go = GetRandomCrossRoad(typeMap);
+                go = Instantiate(go, new Vector3(0, -0.2f, 40f * (i - 1)), Quaternion.identity);
+                go.transform.SetParent(currentMap.transform, false);
+
+            }
+            
+            GameObject roadTile = GetRoadTile(typeMap);
+            
+            
+            for(int j = -3; j <= 3; j++)
+            {
+                GameObject tile = Instantiate(roadTile, new Vector3(0, 0, 40f * (i - 1) + 6 * j), Quaternion.identity);
+                tile.transform.SetParent(currentRoad.transform, false);
+                
+            }
+
+            
+        }
+    }
+
+    private GameObject GetRandomChunk(TypeMap type)
+    {
+        switch(type)
+        {
+            case TypeMap.Village:
+                int i = Random.Range(0,data.villages.Count); 
+                return data.villages[i];
+                break;
+        }
+        return data.villages[0];
+    }
+
+    private GameObject GetRandomCrossRoad(TypeMap type)
+    {
+        switch (type)
+        {
+            case TypeMap.Village:
+                int i = Random.Range(0, data.crossRoadVillages.Count);
+                return data.crossRoadVillages[i];
+                break;
+        }
+        return data.crossRoadVillages[0];
+    }
+
+    private GameObject GetRoadTile(TypeMap type)
+    {
+        switch (type)
+        {
+            case TypeMap.Village:
+                return data.roadTile_Village;
+                break;
+        }
+        return data.roadTile_Village;
+    }
+
+
+
+    /*
     [SerializeField] private SO_ZoneSegment zoneData;
     [SerializeField] private SO_TownObstacleFrequence townObstacleFrequence;
     [SerializeField] private int currentLevelRoad = 0;
@@ -128,4 +225,5 @@ public class MapManager : Singleton<MapManager>
                 break;
         }
     }
+    */
 }

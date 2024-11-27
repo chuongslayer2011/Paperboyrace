@@ -6,7 +6,7 @@ public class Coin : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        MapManager.Ins.ObtainCoin();
+        //MapManager.Ins.ObtainCoin();
         gameObject.SetActive(false);
     }
 }

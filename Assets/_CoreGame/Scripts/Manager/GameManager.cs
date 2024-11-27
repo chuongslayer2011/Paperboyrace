@@ -68,7 +68,7 @@ public class GameManager : Singleton<GameManager>
         player.ChangeAnim(Cache.WIN_ANIM);
         CameraFollow.Ins.SetCameraOnVictory();
         StartCoroutine(OpenWinUI());
-        DataManager.Ins.ObtainCoin(MapManager.Ins.GetObtainCoinOnCurrentMap());
+        //DataManager.Ins.ObtainCoin(MapManager.Ins.GetObtainCoinOnCurrentMap());
     }
 
     public void OnLose()
@@ -89,7 +89,7 @@ public class GameManager : Singleton<GameManager>
     {
         UIManager.Ins.OpenUI<Loading>();
         CameraFollow.Ins.SetCameraOnMenu();
-        MapManager.Ins.ResetRoad();
+        //MapManager.Ins.ResetRoad();
     }
     public IEnumerator OpenWinUI()
     {

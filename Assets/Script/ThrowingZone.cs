@@ -18,7 +18,7 @@ public class ThrowingZone : MonoBehaviour
         if (isDeliveried) return;
         Player.Ins.DeliveryNewPaper(throwingDestination.position);
         StartCoroutine(PlayAnim());
-        MapManager.Ins.ObtainCoinByDelivery();
+        //MapManager.Ins.ObtainCoinByDelivery();
         EventManager.CallDeliveryMailEvent();
         isDeliveried = true;
     }
